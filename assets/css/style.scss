@@ -4,6 +4,10 @@
 @import "bootstrap/bootstrap";
 @import "creative/creative";
 
+footer{
+  background-color: rgb(226, 226, 226);
+}
+
 .navbar-shrink{
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
 }
@@ -17,16 +21,15 @@ header.masthead{
 }
 
 .bg-primary{
-  p a{
+  p a, figcaption a{
     color: #e7ec2d;
   }
-  p a:visited{
+  p a:visited, figcaption a:visited{
     color: #ccd200;
   }
   .lead{
     font-weight: 350;
   }
-  
 }
 
 .content-section-a {
