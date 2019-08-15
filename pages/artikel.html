@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: 'artikel'
+title: 'Semua Artikel Kogito'
+---
+
+<div class="container mt-5 mb-5 pt-5 ">
+
+    <h1>Semua Artikel Kogito</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <ul class="list-group">
+
+                {% for post in site.posts %}
+            
+                    <li class="list-group-item">
+                        <span class="badge badge-secondary float-right">{% include id-date.html date=post.date %}</span>
+                        <span class="text-muted">{{ post.categories }}</span><br>
+                        <a href="{{ post.url }}">{{ post.title }}</a> (<a href="{{ post.url }}#disqus_thread" class="btn-link disabled"></a>) <br>
+                        <small class="text-muted">{{ post.goal }}</small>
+                    </li>
+            
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-4">
+            {% include sidebars/company-intro.html %}
+        </div>
+    </div>
+</div>
+
+<script id="dsq-count-scr" src="//kogito.disqus.com/count.js" async></script>

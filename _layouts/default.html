@@ -3,7 +3,11 @@
 
   {% include head.html %}
 
-  <body>
+  <body 
+    {% if page.is_featured_page %}
+      class="featured-page"
+    {% endif %} 
+  >
 
     {% include navigation.html %}
 

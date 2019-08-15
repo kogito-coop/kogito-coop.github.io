@@ -20,24 +20,30 @@
       $('.navbar-collapse').collapse('hide');
     });
   
-    // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-      target: '#mainNav',
-      offset: 75
-    });
-  
-    // Collapse Navbar
-    var navbarCollapse = function() {
-        if ($("#mainNav").offset().top > 100) {
-            $("#mainNav").addClass("navbar-scrolled navbar-shrink");
+    if ( window.location.pathname == '/' ){
+
+      // Activate scrollspy to add active class to navbar items on scroll
+      $('body').scrollspy({
+        target: '#mainNav',
+        offset: 75
+      });
+
+      // Collapse Navbar
+      var navbarCollapse = function() {
+          if ($("#mainNav").offset().top > 100 ) {
+              $("#mainNav").addClass("navbar-scrolled navbar-shrink");
           } else {
-            $("#mainNav").removeClass("navbar-scrolled navbar-shrink");
+              $("#mainNav").removeClass("navbar-scrolled navbar-shrink");
           }
-    };
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
+      };
+      // Collapse now if page is not at top
+      navbarCollapse();
+      // Collapse the navbar when page is scrolled
+      $(window).scroll(navbarCollapse);
+      
+    }else{
+      $("#mainNav").addClass("navbar-scrolled navbar-shrink");
+    }
   
     // Magnific popup calls
     $('#portfolio').magnificPopup({

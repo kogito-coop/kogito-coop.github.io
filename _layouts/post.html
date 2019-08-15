@@ -2,4 +2,33 @@
 layout: default
 ---
 
-{{ content }}
+<div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <article class="blog-post">
+                <h2 class="blog-post-title">{{ page.title | escape }}</h2>
+                <div class="blog-post-meta">
+                    {% if page.author %}
+                        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.data.authors[page.author].name }}</span></span>,
+                    {% endif %} 
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {% include id-date.html date=page.date %}
+                    </time>
+                </div>
+                <hr>
+                {{ content }}
+                <hr>
+            </article>
+        </div>
+        <div class="col-md-4 blog-sidebar">
+            {% include sidebars/author.html %}
+            {% include sidebars/company-intro.html %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <h4>{{ page.questions-for-reader }}</h4>
+            {% include disqus.html %}
+        </div>
+    </div>
+</div>
