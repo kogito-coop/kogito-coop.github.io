@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: 'acara'
+---
+
+<div class="container mt-5 mb-5 pt-5 ">
+
+    <h1>Acara-Acara Menarik</h1>
+
+    <p>Berikut acara-acara terdekat, yang selaras dengan visi-misi kita. Langgan juga <a href="#">channel Telegram kami</a>.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-8">
+            {% for e in site.data.events %}
+                <div class="card mb-3">
+                    <img src="{{ e.image-url }}" class="card-img-top">
+                    <div class="card-body">
+                        <a href="{{ e.rsvp-url }}" class="btn btn-small btn-primary pull-right">daftar</a>
+                        <small class="text-muted">{{ e.status }}</small>
+                        <p class="card-text">{{ e.why-this-is-interesting }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            {% include sidebars/company-intro.html %}
+        </div>
+    </div>
+
+</div>

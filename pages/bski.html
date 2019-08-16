@@ -1,0 +1,84 @@
+---
+permalink: "bski"
+layout: default
+---
+
+<div class="container mt-5 mb-5 pt-5 ">
+
+    <h1>Balai Sertifikasi Keahlian & Industri</h1>
+
+    <p style="max-width:800px;">
+        Tujuan utama Kogito memang koperasi yang berdikari dan profesional. Tapi kami juga menawarkan pelatihan untuk individu yang ingin berdikari & punya kehidupan yang lebih layak. Karena majunya koperasi dimulai dari anggota-anggotanya.
+    </p>
+
+    <ul class="nav nav-pills" id="workshops-tab" role="tablist">
+        {% for w in site.data.workshops %}
+            <li class="nav-item">
+                <a class="nav-link
+                {% if forloop.first %}
+                    active
+                {% endif %}
+                " id="{{w[0]}}-tab" data-toggle="tab" href="#{{w[0]}}" role="tab" aria-controls="{{w[0]}}" aria-selected="true">{{ w[1].title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="tab-content" id="workshops-tabContent">
+        {% for w in site.data.workshops %}
+            <div class="tab-pane fade
+            {% if forloop.first %}
+                show active
+            {% endif %}
+            " id="{{ w[0] }}" role="tabpanel" aria-labelledby="{{ w[0] }}-tab">
+                <div class="card mt-4">
+                    <h4 class="card-header">
+                        <span class="pull-right" style="background-color: pink;">Rp {{ w[1].price }}</span>
+                        <strong>{{ w[1].title }}</strong>
+                    </h4>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="card-text">
+                                    {{ w[1].description | markdownify | remove: '<p>' | remove: '</p>' }}
+                                </p>
+                                <strong>Silabus:</strong>
+                                <ul>
+                                    {% if w[1].syllabus %}
+                                        {% for s in w[1].syllabus %}
+                                            {% if s.link %}
+                                                <li> <a href="{{s.link}}">{{s.title}}</a></li>
+                                            {% else %}
+                                            <li> {{s.title}}</li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
+                                </ul>
+                                <p>
+                                    <strong>Trainer</strong>: {{ w[1].trainer.name }}<br>
+                                    {{ w[1].trainer.experience | markdownify | remove: '<p>' | remove: '</p>' }}
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p><strong>Waktu kelas:</strong><br>{{w[1].time}}</p>
+                                <strong>Kelas yang tersedia:</strong>
+                                {% if w[1].open-classes %}
+                                    {% for c in w[1].open-classes %}
+                                        <div class="event-box">
+                                            <a class="btn btn-info btn-sm pull-right" href="https:t.me/bukan_admin_berkelakar" target="_blank">Daftar</a>
+                                            <h5>{{ c.time }}</h5>
+                                            <a href="{{ c.place.link }}">{{ c.place.name }}</a>
+                                        </div>
+                                    {% endfor %}
+                                {% else %}
+                                    <br><a class="btn btn-info btn-sm" href="https:t.me/bukan_admin_berkelakar" target="_blank">Belum ada. Minta di sini.</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+    

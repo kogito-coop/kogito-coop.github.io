@@ -1,5 +1,5 @@
 ---
-workshop: tiga-pilar-agile
+workshop: jekyll-web-development
 time: 09:00-12:00
 date: 2019-08-29
 venue: Balai Bersama Pasar Tanah Abang

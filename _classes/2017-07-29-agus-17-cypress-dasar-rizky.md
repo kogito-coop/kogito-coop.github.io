@@ -1,5 +1,5 @@
 ---
-workshop: cypress-dasar
+workshop: jekyll-web-development
 time: 09:00-12:00
 date: 2019-08-17
 venue: Komunitas Teater Utan Kayu, Matraman

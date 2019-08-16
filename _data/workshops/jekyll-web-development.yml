@@ -1,0 +1,32 @@
+title: "Jekyll Web Development"
+description: "Tanpa Wordpress dkk, pembuatan website jadi jauh lebih cepat! Karena sekarang sudah ada Jekyll yang mudah dipelajari, anti-hack, & anti-bayar-hostingan. FYI, Jekyll bukan hanya untuk website yang tidak berubah seperti _company profile_, tapi juga untuk website dinamis seperti toko online &mdash; dan [website Kogito ini](https://github.com/kogito-coop/kogito-coop.github.io) tentunya 😎.<br><br>
+
+Bonus: Anda juga akan belajar setup domain & email. Artinya, training ini akan menghantarkan Anda jadi web developer dengan bayaran profesional."
+prerequisite:
+  - Kemampuan HTML-CSS-Javascript di level pemula.
+time: Setiap hari Sabtu selama satu bulan (4 kali pertemuan). 9-to-5.
+price: 3,5 juta
+syllabus:
+  - title: Github Pages
+    link: https://pages.github.com
+  - title: Jekyll
+    link: https://jekyllrb.com/
+  - title: Prose.io
+    link: https://prose.io/
+  - title: Bootstrap
+    link: https://getbootstrap.com/
+  - title: Beli domain-kamu.com
+  - title: Setup domain-kamu.com & hubungkan ke Github Pages
+  - title: Setup nama-kamu@domain-kamu.com
+trainer:
+  name: Rizky Syaiful
+  experience: _Kemampuan pengembangan web?_ Alumni Fakultas Ilmu Komputer UI ini hanya pernah membuat website & web app. _Kemampuan Jekyll?_ Seluruh website pesanan & pribadi di [repo Github-nya](https://github.com/rizkysyaiful) menggunakan Jekyll. _Kemampuan mengajar?_ Beliau sudah lima tahun jadi trainer Agile.
+open-classes:
+  - time: September 2019
+    place:
+      name: Deep Space Enigma, Jakarta
+      link: https://goo.gl/maps/Tni7Aihn9NJjFdbJ6
+  - time: November 2019
+    place:
+      name: Deep Space Enigma, Jakarta
+      link: https://goo.gl/maps/Tni7Aihn9NJjFdbJ6
