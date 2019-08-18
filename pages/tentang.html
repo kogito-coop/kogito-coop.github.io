@@ -1,29 +1,46 @@
 ---
-layout: default
+layout: page
 permalink: 'tentang'
+title: 'Tentang Koperasi Kogito'
 ---
 
-<div class="container mt-5 mb-5 pt-5 ">
+<h4>Visi Kogito</h4>
 
-    <h1>Tentang Kami</h1>
+<p>
+    untuk Indonesia:<br>
+    {{ site.data.ad-art.visi[0] }}
+</p>
+<p>
+    untuk Kogito:<br>
+    {{ site.data.ad-art.visi[0] }}
+</p>
 
-    <div class="row mt-4">
-        <div class="col-md-8">
-            <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur laudantium voluptatum! Ratione, minima consectetur vitae quam facere animi nisi quia reiciendis ducimus fugit, necessitatibus deleniti voluptas nam! Reiciendis, porro!
-            </p>
-            
-            <p>
-                    Excepturi, error alias consequuntur suscipit repellendus saepe nihil voluptatem eaque tenetur ducimus molestiae aperiam magnam laborum corrupti. Perspiciatis minima consequatur veritatis, magnam maiores veniam aspernatur, nobis ex expedita quis ratione!
-            </p>
-            
-            <p>
-                    Voluptatum inventore, vel, impedit ut nisi eligendi culpa excepturi quae minima facere voluptatem qui ducimus ea. Exercitationem debitis cumque voluptas, repudiandae maxime dolorem obcaecati sit fugit, sed ea suscipit recusandae!
-            </p>
-            
-        </div>
-        <div class="col-md-4">
-            {% include sidebars/company-intro.html %}
-        </div>
-    </div>
-    
+<h4>Misi Kogito</h4>
+
+<ul>
+    {% for text in site.data.ad-art.misi %}
+    <li>
+        {{ text }}
+    </li>
+    {% endfor %}
+</ul>
+
+<h4>Program Kerja Jangka Pendek</h4>
+
+<ul>
+    {% for text in site.data.ad-art.proker-jangka-pendek %}
+    <li>
+        {{ text }}
+    </li>
+    {% endfor %}
+</ul>
+
+<h4>Program Kerja Jangka Panjang</h4>
+
+<ul>
+    {% for text in site.data.ad-art.proker-jangka-panjang %}
+    <li>
+        {{ text }}
+    </li>
+    {% endfor %}
+</ul>

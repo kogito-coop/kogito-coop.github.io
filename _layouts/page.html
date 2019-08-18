@@ -8,18 +8,16 @@ layout: default
             <article class="blog-post">
                 <h2 class="blog-post-title">{{ page.title | escape }}</h2>
                 <span class="blog-post-meta">
-                    <a href="#">
-                        {% if page.author %}
-                            <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.data.authors[page.author].name }}</span></span>
-                        {% endif %}
-                    </a>
+                    {% if page.author %}
+                        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.data.authors[page.author].name }}</span></span>
+                    {% endif %}
                 </span>
                 <hr>
                 {{ content }}
             </article>
         </div>
         <div class="col-md-4 blog-sidebar">
-            {{ include sidebar.html }}
+            {% include sidebars/company-intro.html %}
         </div>
     </div>
 </div>

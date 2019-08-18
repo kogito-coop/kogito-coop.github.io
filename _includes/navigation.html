@@ -10,19 +10,22 @@
             {% if page.url == "/" %} 
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#kondisi">Kondisi Saat Ini</a>
-                    </li>
-                    <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#masalah">Masalah Koperasi</a>
-                    </li>
-                    <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#solusi">Solusi Kogito</a>
-                    </li>
-                    <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#galeri">Galeri</a>
-                    </li>
-                    <li class="nav-item dropdown show">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#koperasi-kogito">Koperasi Kogito</a>
+                </li>
+                <li class="nav-item dropdown show">
                     <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Navigasi
+                        Navigasi
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="/artikel">Artikel</a>
@@ -33,8 +36,18 @@
                     </div>
                 </li>
             {% else %}
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="{{ site.url }}">Apa itu Kogito? (Beranda)</a>
+                <li class="nav-item dropdown show">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Apa itu Kogito? (Laman Depan)
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="{{ site.url }}#page-top">Kogito</a>
+                        <a class="dropdown-item" href="{{ site.url }}#kondisi">Kondisi Saat Ini</a>
+                        <a class="dropdown-item" href="{{ site.url }}#masalah">Masalah Koperasi</a>
+                        <a class="dropdown-item" href="{{ site.url }}#solusi">Solusi Kogito</a>
+                        <a class="dropdown-item" href="{{ site.url }}#galeri">Galeri</a>
+                        <a class="dropdown-item" href="{{ site.url }}#koperasi-kogito">Koperasi Kogito</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="{{site.url}}/artikel">Artikel</a>	
