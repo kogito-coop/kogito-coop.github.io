@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Kami adalah koperasi serba usaha dengan misi membantu koperasi & 
   individu agar lebih profesional & berdikari. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://kogito.id" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kogito.id" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
