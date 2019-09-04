@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Lorem Ipsum"
+title: Lorem Ipsum
 categories: opini
-author: johan 
+author: fengkie
 questions-for-reader: Ada komentar?
+published: true
 ---
 
 Image example:
