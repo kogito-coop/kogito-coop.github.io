@@ -1,5 +1,9 @@
 ---
-published: false
+layout: post
+categories: berita
+author: johan
+questions-for-reader: Menurut kamu apa?
+published: true
 ---
 ## A New Post
 
