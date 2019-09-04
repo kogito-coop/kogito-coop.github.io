@@ -4,6 +4,7 @@ time: Sesi kelas setengah hari (4 jam).
 price: 300 ribu
 syllabus:
   - title: Sejarah uang (dari cangkang kerang sampai kripto)
+    link: https://www.wikiwand.com/en/History_of_money
   - title: Dasar teknologi Bitcoin (kenapa Bitcoin tidak bisa di-hack padahal tidak dijaga institusi manapun)
   - title: Cara membuat 'nomor rekening' & 'pin' Bitcoin
   - title: Cara mengirim Bitcoin

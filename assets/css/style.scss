@@ -44,6 +44,17 @@ header.masthead{
   border-bottom: 1px solid #e7e7e7;
 }
 
+/* blog post */
+
+.image-wrapper{
+  margin-bottom: 1rem;
+  .image-caption{
+    text-align: center;
+    color: grey;
+    margin-top: 5px;
+  }
+}
+
 /*
 * Eventbox
 */
